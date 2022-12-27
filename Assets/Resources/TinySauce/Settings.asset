@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa11ec82e9746928e211e7f096812ca, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  gameAnalyticsIosGameKey: 9a750906c60d1f9a1dfac6caa159cfa4
+  gameAnalyticsIosSecretKey: bb9521a8d2b6d10c77cd445a4522d9c54bafd567
+  gameAnalyticsAndroidGameKey: 9a750906c60d1f9a1dfac6caa159cfa4
+  gameAnalyticsAndroidSecretKey: bb9521a8d2b6d10c77cd445a4522d9c54bafd567
+  facebookAppId: 81a72ae4322bd950d2098eb4f5859dba
+  facebookClientToken: 680366796490943
+  adjustIOSToken: uof2zuw963uo
+  adjustAndroidToken: uof2zuw963uo
+  EditorIdfa: 43f09b54-be64-4bdd-a9b2-f463972ba563
+  UseRemoteConfig: 0
+  UseVoodooAnalytics: 1
+  companyName: SatisfyLabs
+  privacyPolicyURL: http://newprojectsgames.epizy.com/private-policy/?i=1
+  developerContactEmail: Curious.Kaiju.43@gmail.com
