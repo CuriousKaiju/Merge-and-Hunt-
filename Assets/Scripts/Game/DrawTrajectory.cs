@@ -7,7 +7,7 @@ public class DrawTrajectory : MonoBehaviour
     [SerializeField] private LineRenderer _lineRenderer;
     [SerializeField] private Transform _landingPoint;
     [SerializeField] private LayerMask _groundLayer;
-    [SerializeField]
+    [SerializeField] 
     [Range(3, 300)]
     private int _lineSegmentCount = 20;
     private Vector3 _lastHitPosition;

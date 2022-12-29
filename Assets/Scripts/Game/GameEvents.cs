@@ -14,6 +14,7 @@ public static class GameEvents
     public static Action<bool> OnIncreaseCombo;
     public static Action<int> OnUpdateMeatStatus;
     public static Action<bool> OnWindParticles;
+    public static Action<bool> OnSetGhostStatus;
 
     public static void CallOnFindNewPredator(Transform prey)
     {
@@ -49,7 +50,11 @@ public static class GameEvents
     {
         OnWindParticles?.Invoke(particlesStatus);
     }
-        
+
+    public static void CallOnSetGhostStatus(bool ghostStatus)
+    {
+        OnSetGhostStatus?.Invoke(ghostStatus);
+    }
 
 
 

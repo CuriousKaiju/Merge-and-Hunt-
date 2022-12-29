@@ -10,18 +10,23 @@ public class AnimalMovement : MonoBehaviour
     public float _levelSpeed;
     public bool _isItForstCreature;
 
-
+    [SerializeField] private GameObject _ghost;
     [SerializeField] private PathCreator _pathCreator;
     [SerializeField] private Predator _predator;
     [SerializeField] private Transform _lookPoint;
     [SerializeField] private GameObject _particleMarkert;
     [SerializeField] private DragAndShoot _dragAndShoot;
     [SerializeField] private Collider _collider;
+    [SerializeField] private LadningPoint _landingPoint;
 
-    
+    private Ghost _currentGhost;
     private float _distanceTreveled;
     private bool _cameraPosition;
 
+    public void SetAimForBeginers()
+    {
+        _landingPoint.TurnOnFeature();
+    }
     void Update()
     {
         Move();
@@ -38,6 +43,31 @@ public class AnimalMovement : MonoBehaviour
         _distanceTreveled = pathoffset;
         _cameraPosition = cameraPosition;
     }
+    public void SetPathForAnimal(PathCreator pathCreator, float pathoffset, bool cameraPosition, bool withGhost)
+    {
+        var newGhost = Instantiate(_ghost, null).GetComponent<Ghost>();
+
+        _pathCreator = pathCreator;
+        _distanceTreveled = pathoffset;
+        _cameraPosition = cameraPosition;
+        _ghost = newGhost.gameObject;
+
+        newGhost._pathCreator = pathCreator;
+        newGhost._distanceTreveled = pathoffset;
+
+        _currentGhost = _ghost.GetComponent<Ghost>();
+    }
+
+    public void StartGhost(float speed)
+    {
+        _currentGhost._distanceTreveled += 0.095f;
+        _currentGhost._visual.SetActive(true);
+        _currentGhost._speed = speed;
+        _currentGhost._animator.speed = speed * 10;
+        _currentGhost._animator.SetTrigger("Run");
+        
+    }
+
     public void InitMovement()
     {
         if(_isItForstCreature)

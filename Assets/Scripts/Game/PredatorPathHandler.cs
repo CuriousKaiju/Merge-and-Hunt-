@@ -7,6 +7,7 @@ using TMPro;
 
 public class PredatorPathHandler : MonoBehaviour
 {
+    [SerializeField] private bool _isItBeginersLevel;
 
     [SerializeField] private float _levelSpeed;
     [SerializeField] private TextMeshProUGUI _currentValueOfMeat;
@@ -130,7 +131,10 @@ public class PredatorPathHandler : MonoBehaviour
                 if (!savesPlatforms._isPlatformFree && !_firstEnemyWasSpawned && savesPlatforms._isPlatformForHunt)
                 {
                     var newPredator = Instantiate(_predators[savesPlatforms._levelOfCreature]).GetComponent<AnimalMovement>();
-
+                    if (_isItBeginersLevel)
+                    {
+                        newPredator.SetAimForBeginers();
+                    }
                     _firstPredator = newPredator;
                     _firstPredator._isItForstCreature = true;
                     _firstPredator._levelSpeed = _levelSpeed;
@@ -143,8 +147,12 @@ public class PredatorPathHandler : MonoBehaviour
                 }
                 else if(!savesPlatforms._isPlatformFree && _firstEnemyWasSpawned && savesPlatforms._isPlatformForHunt)
                 {
-                   
+
                     var newPredator = Instantiate(_predators[savesPlatforms._levelOfCreature]).GetComponent<AnimalMovement>();
+                    if(_isItBeginersLevel)
+                    {
+                        newPredator.SetAimForBeginers();
+                    }
                     int randomPathID = Random.Range(0, _pathesForPredators.Count - 1);
                     newPredator.SetPathForAnimal(_pathesForPredators[randomPathID].pathCreator, _pathesForPredators[randomPathID].pathOffset, _pathesForPredators[randomPathID].cameraPos);
                     _pathesForPredators.RemoveAt(randomPathID);
@@ -157,9 +165,18 @@ public class PredatorPathHandler : MonoBehaviour
     {
         foreach (AnimalMovement animalMovement in _animalsPrey)
         {
-            int randomPathID = Random.Range(0, _pathesForPrey.Count - 1);
-            animalMovement.SetPathForAnimal(_pathesForPrey[randomPathID].pathCreator, _pathesForPrey[randomPathID].pathOffset, _pathesForPrey[randomPathID].cameraPos);
-            _pathesForPrey.RemoveAt(randomPathID);
+            if (_isItBeginersLevel)
+            {
+                int randomPathID = Random.Range(0, _pathesForPrey.Count - 1);
+                animalMovement.SetPathForAnimal(_pathesForPrey[randomPathID].pathCreator, _pathesForPrey[randomPathID].pathOffset, _pathesForPrey[randomPathID].cameraPos, true);
+                _pathesForPrey.RemoveAt(randomPathID);
+            }
+            else
+            {
+                int randomPathID = Random.Range(0, _pathesForPrey.Count - 1);
+                animalMovement.SetPathForAnimal(_pathesForPrey[randomPathID].pathCreator, _pathesForPrey[randomPathID].pathOffset, _pathesForPrey[randomPathID].cameraPos);
+                _pathesForPrey.RemoveAt(randomPathID);
+            }
         }
     }
 

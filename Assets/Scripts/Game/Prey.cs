@@ -79,6 +79,7 @@ public class Prey : MonoBehaviour
 
     private IEnumerator SetVarningStatus(float levelSpeed)
     {
+        _animalMovement.StartGhost(levelSpeed);
         _warningParticles.SetActive(true);
         _animalMovement._speed = levelSpeed;
         _animator.speed = levelSpeed * 10;

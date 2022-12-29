@@ -245,15 +245,6 @@ LineRenderer:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: -5.5050535
-        outSlope: -5.5050535
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.051282022
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -277,7 +268,7 @@ LineRenderer:
       ctime7: 0
       atime0: 0
       atime1: 16191
-      atime2: 47609
+      atime2: 65535
       atime3: 65535
       atime4: 65535
       atime5: 0
@@ -285,7 +276,7 @@ LineRenderer:
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 4
+      m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
@@ -491,6 +482,8 @@ MonoBehaviour:
   - {fileID: 4368274156137351307}
   - {fileID: 8954775736494633557}
   - {fileID: 3651194575983097829}
+  _colliders: []
+  _animalParts: []
   _animalHead: {fileID: 6764228193188405628}
   _predatorRb: {fileID: 7516106034111341266}
   _dragAndShoot: {fileID: 422756804906976186}

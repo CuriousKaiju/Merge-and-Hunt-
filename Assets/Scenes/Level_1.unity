@@ -661,7 +661,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: BOAR_LVL_1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2275986016787632525, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8572524517132601522, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
 --- !u!1 &609720718
 GameObject:
@@ -2129,6 +2134,11 @@ Transform:
   m_Father: {fileID: 1787423072}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -189.026, z: 0}
+--- !u!1 &1467861767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2275986016787632525, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
+  m_PrefabInstance: {fileID: 570494888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1526629048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2401,12 +2411,41 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2275986016787632524, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
   m_PrefabInstance: {fileID: 570494888}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1467861767}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9c6a99a66b7f2b47b615b7166ec2b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &1623432677
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467861767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.1053107
+  m_Center: {x: 0, y: 0.42, z: 0.6}
+--- !u!54 &1623432681
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467861767}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &1629314323 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4709636283143322, guid: 76488b1e488a29846901aa5360eef16d, type: 3}
@@ -3011,8 +3050,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1ab28d2e4407fdc4eb0b1cfc51188188, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3396,6 +3435,10 @@ PrefabInstance:
       propertyPath: _cameraController
       value: 
       objectReference: {fileID: 524131822}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _isItBeginersLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _currentValueOfMeat
       value: 

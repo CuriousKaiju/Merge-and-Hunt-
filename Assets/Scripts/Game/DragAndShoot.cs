@@ -83,6 +83,13 @@ public class DragAndShoot : MonoBehaviour
                         _predatorPivot.DOLookAt(_rangePoint.position, _predatorPivotRotationSpeed);
                         _animalMovement.SetInterectibleStatus(false);
                         _landingPoint.transform.parent = null;
+
+                        if(!_animalMovement._isItForstCreature)
+                        {
+                            GameEvents.CallOnSetGhostStatus(false);
+                        }
+
+
                     }
                 }
                 else
