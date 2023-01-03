@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<SSHPreset xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <orientation>portrait</orientation>
+  <lastSavePath>/Users/macbook/Documents/Project/Seven Keywords/screenshot</lastSavePath>
+  <textureFormat>RGB24</textureFormat>
+  <keyToPress>S</keyToPress>
+  <keyToHold>LeftShift</keyToHold>
+  <buildPathRoot>MyPictures</buildPathRoot>
+  <buildPathExtra>screenshots</buildPathExtra>
+  <sizes>
+    <size width="1242" height="2208" label="" />
+    <size width="1242" height="2688" label="" />
+    <size width="1284" height="2778" label="" />
+    <size width="1536" height="2048" label="" />
+    <size width="2048" height="2732" label="" />
+  </sizes>
+</SSHPreset>
