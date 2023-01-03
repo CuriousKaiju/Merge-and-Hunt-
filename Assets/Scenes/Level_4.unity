@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2275986016787632524, guid: 71c902d742b52ef458b52c7ede820c47, type: 3}
+      propertyPath: _ghost
+      value: 
+      objectReference: {fileID: 273496870184892611, guid: 24c01a3ebec1bf1488d60a6cf1efc729, type: 3}
     - target: {fileID: 2275986016787632525, guid: 71c902d742b52ef458b52c7ede820c47, type: 3}
       propertyPath: m_Name
       value: DEER_LVL_2
@@ -1308,6 +1312,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2275986016787632524, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
+      propertyPath: _ghost
+      value: 
+      objectReference: {fileID: 273496870184892611, guid: 24c01a3ebec1bf1488d60a6cf1efc729, type: 3}
     - target: {fileID: 2275986016787632525, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
       propertyPath: m_Name
       value: BOAR_LVL_1 (2)
@@ -1949,6 +1957,7 @@ MonoBehaviour:
   _levelID: 1
   _isItLastLevel: 0
   _isItMainUIHapler: 0
+  _levelVisual: 0
 --- !u!224 &1406150393 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6599687720280874839, guid: a01daa54d187b614caf040bd8b1573b1, type: 3}
@@ -3445,12 +3454,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 524131820}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _uiHalper
       value: 
       objectReference: {fileID: 1775413433}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _levelSpeed
-      value: 0.085
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _finishPopUp
@@ -3469,12 +3482,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 524131822}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _isItBeginersLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _currentValueOfMeat
       value: 
       objectReference: {fileID: 180057951}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _predators.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _animalsPrey.Array.size
@@ -3524,6 +3541,10 @@ PrefabInstance:
       propertyPath: _predators.Array.data[10]
       value: 
       objectReference: {fileID: 6278039722041392507, guid: be0c92d8fc4b38b4bbcd5e10f271aa3d, type: 3}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _predators.Array.data[11]
+      value: 
+      objectReference: {fileID: 7419994916710985693, guid: de9c7176854034a4c9ee86aa113b7ae1, type: 3}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _animalsPrey.Array.data[0]
       value: 

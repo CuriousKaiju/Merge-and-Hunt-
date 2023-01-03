@@ -11,6 +11,10 @@ public class Ghost : MonoBehaviour
     public float _distanceTreveled;
     public float _speed;
     public GameObject _visual;
+    public GameObject _magicBuff;
+    public Camera _camera;
+    public GameObject _arrow;
+
 
     private void Awake()
     {
@@ -23,6 +27,7 @@ public class Ghost : MonoBehaviour
     void Update()
     {
         Move();
+        _arrow.transform.LookAt(_arrow.transform.position + _camera.transform.rotation * Vector3.forward, _camera.transform.rotation * Vector3.up);
     }
     private void Move()
     {
@@ -31,12 +36,29 @@ public class Ghost : MonoBehaviour
         transform.rotation = _pathCreator.path.GetRotationAtDistance(_distanceTreveled);
     }
     private void ChangeStatusOfGhost(bool status)
-    { 
-        if(!status)
+    {
+        if (!status)
         {
             _speed = 0;
             _animator.SetTrigger("Stop");
         }
     }
 
+    public void ActivateParticles()
+    {
+        _magicBuff.SetActive(true);
+        _magicBuff.GetComponent<ParticleSystem>().Play();
+    }
+    public void CloseGhost()
+    {
+        
+        Destroy(gameObject);
+        
+        /*
+        _visual.SetActive(false);
+        _magicBuff.SetActive(true);
+        _magicBuff.GetComponent<ParticleSystem>().Play();
+        gameObject.GetComponent<Collider>().enabled = false;
+        */
+    }
 }

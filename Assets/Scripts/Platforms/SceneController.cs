@@ -34,13 +34,12 @@ public class SceneController : MonoBehaviour
     [SerializeField] private float _punchScaleDuration;
     [SerializeField] private MergeLocationHandler _mergeLocationHandler;
     private int _currentBuyLevel;
-
+    private int _visualLevel;
     private void Awake()
     {
-
         SpawnCostArray();
-
         SetMeatStatus();
+
         if (PlayerPrefs.HasKey("Level"))
         {
             _nextLevel = PlayerPrefs.GetInt("Level");
@@ -106,11 +105,25 @@ public class SceneController : MonoBehaviour
             idOfnewAnimal += 1;
         }
 
-        if(_currentBuyLevel > 101)
+        if (_currentBuyLevel > 100)
         {
             idOfnewAnimal += 1;
         }
-        
+
+        if (_currentBuyLevel > 151)
+        {
+            idOfnewAnimal += 1;
+        }
+
+        if (_currentBuyLevel > 200)
+        {
+            idOfnewAnimal += 1;
+        }
+
+        if (_currentBuyLevel > 251)
+        {
+            idOfnewAnimal += 1;
+        }
 
         _currentValueTransform.DOKill();
         _currentValueTransform.localScale = new Vector3(1, 1, 1);
@@ -146,8 +159,8 @@ public class SceneController : MonoBehaviour
     }
     public void StartHunt()
     {
-        _blackScreenAppears.SetActive(true);
         _platformSaves.SaveToJson();
+        _blackScreenAppears.SetActive(true);
     }
     public void LoadLevel()
     {

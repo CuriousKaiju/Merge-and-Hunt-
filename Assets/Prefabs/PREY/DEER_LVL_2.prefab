@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 8572524517132601522}
   m_Layer: 0
   m_Name: DEER_LVL_2
-  m_TagString: PreyRadius
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,12 +469,15 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
+  _needGhost: 0
+  _ghost: {fileID: 273496870184892611, guid: e22766982429e7146a6292390265cd8e, type: 3}
   _pathCreator: {fileID: 0}
   _predator: {fileID: 0}
   _lookPoint: {fileID: 2275986016483608533}
   _particleMarkert: {fileID: 0}
   _dragAndShoot: {fileID: 0}
   _collider: {fileID: 0}
+  _landingPoint: {fileID: 0}
 --- !u!114 &2275986016787632522
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,12 +13,14 @@ public class LadningPoint : MonoBehaviour
 
     [SerializeField] private ParticleSystem _wind;
     [SerializeField] private ParticleSystem _groundAim;
+    [SerializeField] private ParticleSystem _additionalParticles;
     public void SetGreenStatus()
     {
         _sprite.color = Color.green;
         _lineRenderer.colorGradient = _green;
         _wind.startColor = Color.green;
         _groundAim.startColor = Color.green;
+        _additionalParticles.startColor = Color.green;
     }
     public void SetRedStatus()
     {
@@ -26,6 +28,7 @@ public class LadningPoint : MonoBehaviour
         _lineRenderer.colorGradient = _red;
         _wind.startColor = Color.red;
         _groundAim.startColor = Color.red;
+        _additionalParticles.startColor = Color.red;
 
     }
     public void TurnOnFeature()

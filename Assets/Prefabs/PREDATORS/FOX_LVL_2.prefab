@@ -403,12 +403,14 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
+  _ghost: {fileID: 0}
   _pathCreator: {fileID: 0}
   _predator: {fileID: 2155215017705557378}
   _lookPoint: {fileID: 372360449082662432}
   _particleMarkert: {fileID: 1520008380381651778}
   _dragAndShoot: {fileID: 2155215017017398938}
   _collider: {fileID: 8562286838681145402}
+  _landingPoint: {fileID: 7982062656113742733}
 --- !u!114 &2155215017017398938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,6 +639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LANDING POINT
       objectReference: {fileID: 0}
+    - target: {fileID: 4260476810510045058, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
+      propertyPath: _lineRenderer
+      value: 
+      objectReference: {fileID: 1148053657279170819}
     - target: {fileID: 8030519226920074262, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -688,6 +694,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8030519226920074262, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
   m_PrefabInstance: {fileID: 6189558493485177871}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7982062656113742733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4260476810510045058, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
+  m_PrefabInstance: {fileID: 6189558493485177871}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8412001867313809265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a740d69143ac34cb1df95858f8ef4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8412001867313809265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2402905176320383870, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
