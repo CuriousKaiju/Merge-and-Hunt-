@@ -35,8 +35,6 @@ public class PredatorPathHandler : MonoBehaviour
 
     [SerializeField] private PathesWithOffsets _starterPath;
 
-    [SerializeField] private Camera _camera;
-
     private AnimalMovement _firstPredator;
     private string _dataPath;
     private bool _firstEnemyWasSpawned;
@@ -170,7 +168,7 @@ public class PredatorPathHandler : MonoBehaviour
             if (_isItBeginersLevel)
             {
                 int randomPathID = Random.Range(0, _pathesForPrey.Count - 1);
-                animalMovement.SetPathForAnimal(_pathesForPrey[randomPathID].pathCreator, _pathesForPrey[randomPathID].pathOffset, _pathesForPrey[randomPathID].cameraPos, true, _camera);
+                animalMovement.SetPathForAnimal(_pathesForPrey[randomPathID].pathCreator, _pathesForPrey[randomPathID].pathOffset, _pathesForPrey[randomPathID].cameraPos, true);
                 _pathesForPrey.RemoveAt(randomPathID);
             }
             else

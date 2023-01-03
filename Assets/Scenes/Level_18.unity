@@ -791,7 +791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &690763177
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1838,7 +1838,6 @@ MonoBehaviour:
   _levelID: 1
   _isItLastLevel: 0
   _isItMainUIHapler: 0
-  _levelVisual: 0
 --- !u!1 &1364183167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,7 +3383,7 @@ PrefabInstance:
       objectReference: {fileID: 180057951}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _predators.Array.size
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _animalsPrey.Array.size
@@ -3434,10 +3433,6 @@ PrefabInstance:
       propertyPath: _predators.Array.data[10]
       value: 
       objectReference: {fileID: 6278039722041392507, guid: be0c92d8fc4b38b4bbcd5e10f271aa3d, type: 3}
-    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
-      propertyPath: _predators.Array.data[11]
-      value: 
-      objectReference: {fileID: 7419994916710985693, guid: de9c7176854034a4c9ee86aa113b7ae1, type: 3}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _animalsPrey.Array.data[0]
       value: 

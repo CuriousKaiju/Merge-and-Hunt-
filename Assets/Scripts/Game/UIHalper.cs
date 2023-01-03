@@ -19,15 +19,13 @@ public class UIHalper : MonoBehaviour
     private int _desiredPreyCount;
     private int _playersPreyCount;
 
-    public int _levelVisual;
-
     private void Start()
     {
 
     }
     public void StartSavesAndEvents()
     {
-
+        
         PlayerPrefs.SetInt("Level", _levelID);
         TinySauce.OnGameStarted((_levelID - 1).ToString());
         Debug.Log("start: " + (_levelID - 1).ToString());
@@ -48,12 +46,6 @@ public class UIHalper : MonoBehaviour
         if (openNextLevel && !_isItLastLevel)
         {
             _levelID += 1;
-            PlayerPrefs.SetInt("Level", _levelID);
-        }
-
-        if (_isItLastLevel)
-        {
-            _levelID = 2;
             PlayerPrefs.SetInt("Level", _levelID);
         }
 

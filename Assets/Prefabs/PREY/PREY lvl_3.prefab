@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 8242520998437841313}
   m_Layer: 0
   m_Name: PREY lvl_3
-  m_TagString: Untagged
+  m_TagString: PreyRadius
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,15 +438,12 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
-  _needGhost: 0
-  _ghost: {fileID: 0}
   _pathCreator: {fileID: 0}
   _predator: {fileID: 0}
   _lookPoint: {fileID: 2275986016483608533}
   _particleMarkert: {fileID: 0}
   _dragAndShoot: {fileID: 0}
   _collider: {fileID: 0}
-  _landingPoint: {fileID: 0}
 --- !u!114 &2275986016787632522
 MonoBehaviour:
   m_ObjectHideFlags: 0

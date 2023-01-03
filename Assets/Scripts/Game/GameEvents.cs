@@ -15,8 +15,6 @@ public static class GameEvents
     public static Action<int> OnUpdateMeatStatus;
     public static Action<bool> OnWindParticles;
     public static Action<bool> OnSetGhostStatus;
-    public static Action OnUpdateGhostStatus;
-    public static Action OnStartAllGhost;
 
     public static void CallOnFindNewPredator(Transform prey)
     {
@@ -58,13 +56,7 @@ public static class GameEvents
         OnSetGhostStatus?.Invoke(ghostStatus);
     }
 
-    public static void CallOnUpdateGhostStatus()
-    {
-        OnUpdateGhostStatus?.Invoke();
-    }
 
-    public static void CallOnStartAllGhost()
-    {
-        OnStartAllGhost?.Invoke();
-    }
+
+
 }
