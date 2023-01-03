@@ -469,12 +469,15 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
+  _needGhost: 0
+  _ghost: {fileID: 0}
   _pathCreator: {fileID: 0}
   _predator: {fileID: 0}
   _lookPoint: {fileID: 2275986016483608533}
   _particleMarkert: {fileID: 0}
   _dragAndShoot: {fileID: 0}
   _collider: {fileID: 0}
+  _landingPoint: {fileID: 0}
 --- !u!114 &2275986016787632522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,8 +490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aa2eb9dde05db49bf5b6e324101792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _totalHealth: 30
-  _reward: 150
+  _totalHealth: 230
+  _reward: 3500
   _animator: {fileID: 2921858919226695832}
   _ragDoll:
   - {fileID: 7503577619314054074}
@@ -515,6 +518,7 @@ MonoBehaviour:
   _warningParticles: {fileID: 5893907378433829526}
   _magnitCollider: {fileID: 8572524517132601522}
   _huntPoint: {fileID: 869915675}
+  _pointForConnection: {fileID: 0}
 --- !u!114 &4434145378007975761
 MonoBehaviour:
   m_ObjectHideFlags: 0

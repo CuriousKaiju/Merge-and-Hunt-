@@ -9,6 +9,7 @@ public class AnimalMovement : MonoBehaviour
     public float _speed;
     public float _levelSpeed;
     public bool _isItForstCreature;
+    public bool _needGhost;
 
     [SerializeField] private GameObject _ghost;
     [SerializeField] private PathCreator _pathCreator;
@@ -23,6 +24,14 @@ public class AnimalMovement : MonoBehaviour
     private float _distanceTreveled;
     private bool _cameraPosition;
 
+    private void Awake()
+    {
+        GameEvents.OnUpdateGhostStatus += UpdateGhost;
+    }
+    private void OnDestroy()
+    {
+        GameEvents.OnUpdateGhostStatus -= UpdateGhost;
+    }
     public void SetAimForBeginers()
     {
         _landingPoint.TurnOnFeature();
@@ -43,10 +52,11 @@ public class AnimalMovement : MonoBehaviour
         _distanceTreveled = pathoffset;
         _cameraPosition = cameraPosition;
     }
-    public void SetPathForAnimal(PathCreator pathCreator, float pathoffset, bool cameraPosition, bool withGhost)
+    public void SetPathForAnimal(PathCreator pathCreator, float pathoffset, bool cameraPosition, bool withGhost, Camera camera)
     {
         var newGhost = Instantiate(_ghost, null).GetComponent<Ghost>();
 
+        _needGhost = true;
         _pathCreator = pathCreator;
         _distanceTreveled = pathoffset;
         _cameraPosition = cameraPosition;
@@ -54,19 +64,56 @@ public class AnimalMovement : MonoBehaviour
 
         newGhost._pathCreator = pathCreator;
         newGhost._distanceTreveled = pathoffset;
-
+        newGhost._camera = camera;
         _currentGhost = _ghost.GetComponent<Ghost>();
     }
 
     public void StartGhost(float speed)
     {
-        _currentGhost._distanceTreveled += 0.095f;
-        _currentGhost._visual.SetActive(true);
-        _currentGhost._speed = speed;
-        _currentGhost._animator.speed = speed * 10;
-        _currentGhost._animator.SetTrigger("Run");
-        
+        if (_currentGhost)
+        {
+            _currentGhost._distanceTreveled = _distanceTreveled + 0.095f;
+            _currentGhost._visual.SetActive(true);
+            _currentGhost._speed = speed;
+            _currentGhost._animator.speed = speed * 10;
+            _currentGhost._animator.SetTrigger("Run");
+            _currentGhost.ActivateParticles();
+        }
     }
+
+    public void StartGhost()
+    {
+        if (_currentGhost)
+        {
+            _currentGhost._distanceTreveled = _distanceTreveled + 0.095f;
+            _currentGhost._visual.SetActive(true);
+            _currentGhost._speed = _speed;
+            _currentGhost._animator.speed = _speed * 10;
+            _currentGhost._animator.SetTrigger("Run");
+            _currentGhost.ActivateParticles();
+        }
+    }
+    private void UpdateGhost()
+    {
+        if (_currentGhost)
+        {
+            _currentGhost._distanceTreveled = _distanceTreveled + 0.095f;
+            _currentGhost._visual.SetActive(true);
+            _currentGhost._speed = _speed;
+            _currentGhost._animator.speed = _speed * 10;
+            _currentGhost._animator.SetTrigger("Run");
+            _currentGhost.ActivateParticles();
+        }
+    }
+
+    public void CloseGhost()
+    {
+        if(_ghost && _needGhost)
+        {
+            _ghost.GetComponent<Ghost>().CloseGhost();
+        }
+    }
+
 
     public void InitMovement()
     {

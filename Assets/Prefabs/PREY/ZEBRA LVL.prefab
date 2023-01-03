@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869915674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.604, z: 1.458}
+  m_LocalPosition: {x: 0, y: 0.887, z: 0.944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 8572524517132601522}
   m_Layer: 0
   m_Name: ZEBRA LVL
-  m_TagString: PreyRadius
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,12 +469,15 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
+  _needGhost: 0
+  _ghost: {fileID: 0}
   _pathCreator: {fileID: 0}
   _predator: {fileID: 0}
   _lookPoint: {fileID: 2275986016483608533}
   _particleMarkert: {fileID: 0}
   _dragAndShoot: {fileID: 0}
   _collider: {fileID: 0}
+  _landingPoint: {fileID: 0}
 --- !u!114 &2275986016787632522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,8 +490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aa2eb9dde05db49bf5b6e324101792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _totalHealth: 250
-  _reward: 2800
+  _totalHealth: 260
+  _reward: 4300
   _animator: {fileID: 4905201768723770315}
   _ragDoll:
   - {fileID: 3147547535473904402}
@@ -1115,27 +1118,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3719293483007794655, guid: cf0fb6ef30e097340bd3eb3065330e5f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6955117
+      value: 1.2023365
       objectReference: {fileID: 0}
     - target: {fileID: 3719293483007794655, guid: cf0fb6ef30e097340bd3eb3065330e5f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6955117
+      value: 1.2023365
       objectReference: {fileID: 0}
     - target: {fileID: 3719293483007794655, guid: cf0fb6ef30e097340bd3eb3065330e5f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.6955117
+      value: 1.2023365
       objectReference: {fileID: 0}
     - target: {fileID: 3719293483007794655, guid: cf0fb6ef30e097340bd3eb3065330e5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: 3719293483007794655, guid: cf0fb6ef30e097340bd3eb3065330e5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.092
       objectReference: {fileID: 0}
     - target: {fileID: 3719293483007794655, guid: cf0fb6ef30e097340bd3eb3065330e5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.007
+      value: 0.983
       objectReference: {fileID: 0}
     - target: {fileID: 3719293483007794655, guid: cf0fb6ef30e097340bd3eb3065330e5f, type: 3}
       propertyPath: m_LocalRotation.w
