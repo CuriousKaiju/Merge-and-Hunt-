@@ -403,6 +403,7 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
+  _needGhost: 0
   _ghost: {fileID: 0}
   _pathCreator: {fileID: 0}
   _predator: {fileID: 422756803480754338}

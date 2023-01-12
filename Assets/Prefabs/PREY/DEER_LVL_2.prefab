@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869915674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.677, z: 0.439}
+  m_LocalPosition: {x: 0, y: 0.959, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 8572524517132601522}
   m_Layer: 0
   m_Name: DEER_LVL_2
-  m_TagString: Untagged
+  m_TagString: PreyRadius
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,10 +547,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.122088
-  m_Height: 2.9715881
+  m_Radius: 0.64858985
+  m_Height: 2.3290405
   m_Direction: 2
-  m_Center: {x: 0, y: 1.1537597, z: 0.5831146}
+  m_Center: {x: 0, y: 0.6802616, z: 0.5191345}
 --- !u!1 &2275986017469526868
 GameObject:
   m_ObjectHideFlags: 0

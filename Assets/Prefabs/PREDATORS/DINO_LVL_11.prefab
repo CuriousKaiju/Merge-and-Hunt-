@@ -403,6 +403,7 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
+  _needGhost: 0
   _ghost: {fileID: 0}
   _pathCreator: {fileID: 0}
   _predator: {fileID: 422756803480754338}
@@ -492,7 +493,7 @@ MonoBehaviour:
   _animalMovement: {fileID: 6278039722041392505}
   _creature: {fileID: 4519091063057050397}
   _trueHead: {fileID: 412515156766472459}
-  _damage: 310
+  _damage: 350
   _readyForAttack: 0
 --- !u!1 &8074339803029256431
 GameObject:

@@ -13,7 +13,7 @@ public class LevelMap : MonoBehaviour
         int number = currentLevel;
         int firstNumberInArray = 0;
 
-        if (currentLevel > 10)
+        if (currentLevel > 10) 
         {
             number = currentLevel % 10;
             firstNumberInArray = currentLevel - number;

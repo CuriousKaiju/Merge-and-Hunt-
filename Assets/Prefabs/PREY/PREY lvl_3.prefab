@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 8242520998437841313}
   m_Layer: 0
   m_Name: PREY lvl_3
-  m_TagString: Untagged
+  m_TagString: PreyRadius
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -516,10 +516,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.87645316
-  m_Height: 3.1909027
+  m_Radius: 0.7620726
+  m_Height: 2.962555
   m_Direction: 2
-  m_Center: {x: 0, y: 0.8108001, z: 0.22040558}
+  m_Center: {x: 0, y: 0.69641954, z: 0.19865417}
 --- !u!1 &2275986017469526868
 GameObject:
   m_ObjectHideFlags: 0

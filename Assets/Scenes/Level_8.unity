@@ -339,6 +339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HORSE_LVL_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2275986016787632525, guid: 8e818fd0e4c0ac847944a4e3394d2aac, type: 3}
+      propertyPath: m_TagString
+      value: PreyRadius
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e818fd0e4c0ac847944a4e3394d2aac, type: 3}
 --- !u!114 &391726830 stripped
@@ -2627,6 +2631,10 @@ PrefabInstance:
     - target: {fileID: 2275986016787632525, guid: 8e818fd0e4c0ac847944a4e3394d2aac, type: 3}
       propertyPath: m_Name
       value: HORSE_LVL_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275986016787632525, guid: 8e818fd0e4c0ac847944a4e3394d2aac, type: 3}
+      propertyPath: m_TagString
+      value: PreyRadius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e818fd0e4c0ac847944a4e3394d2aac, type: 3}

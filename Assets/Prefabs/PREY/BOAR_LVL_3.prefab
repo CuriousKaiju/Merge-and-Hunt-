@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869915674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.196, z: 0.722}
+  m_LocalPosition: {x: 0, y: 0.486, z: 1.091}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -469,12 +469,15 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
+  _needGhost: 0
+  _ghost: {fileID: 0}
   _pathCreator: {fileID: 0}
   _predator: {fileID: 0}
   _lookPoint: {fileID: 2275986016483608533}
   _particleMarkert: {fileID: 0}
   _dragAndShoot: {fileID: 0}
   _collider: {fileID: 0}
+  _landingPoint: {fileID: 0}
 --- !u!114 &2275986016787632522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,10 +547,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.2639766
-  m_Height: 3.7460327
+  m_Radius: 0.7144038
+  m_Height: 2.5959473
   m_Direction: 2
-  m_Center: {x: -0.029999971, y: 1.4022143, z: 0.7072449}
+  m_Center: {x: -0.029999971, y: 0.8526415, z: 0.6209717}
 --- !u!1 &2275986017469526868
 GameObject:
   m_ObjectHideFlags: 0

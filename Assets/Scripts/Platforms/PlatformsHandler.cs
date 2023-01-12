@@ -76,7 +76,7 @@ public class PlatformsHandler : MonoBehaviour
         {
             if (!platform._isItBoughtPlatform)
             {
-                platform._openPrice = pastPrice * 2;
+                platform._openPrice = pastPrice * 3;
                 platform.SetDoesntBuyStatus();
             }
         }

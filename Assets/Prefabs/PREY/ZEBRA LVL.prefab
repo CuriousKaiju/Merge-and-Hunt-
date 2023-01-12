@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 8572524517132601522}
   m_Layer: 0
   m_Name: ZEBRA LVL
-  m_TagString: Untagged
+  m_TagString: PreyRadius
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,10 +547,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.9041165
-  m_Height: 3.6938477
+  m_Radius: 0.8094891
+  m_Height: 2.8977966
   m_Direction: 2
-  m_Center: {x: -0.029999971, y: 1.6740693, z: 0.9909668}
+  m_Center: {x: -0.029999971, y: 0.6549911, z: 0.9389496}
 --- !u!1 &2275986017469526868
 GameObject:
   m_ObjectHideFlags: 0
