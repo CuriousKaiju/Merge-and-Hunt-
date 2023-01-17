@@ -136,7 +136,7 @@ public class Predator : MonoBehaviour
                 GameEvents.CallOnFindNewPredator(other.transform.root);
                 gameObject.GetComponent<Collider>().enabled = false;
                 SetRagDoll();
-                _animalHead.AddForce(Vector3.up * 80, ForceMode.Impulse);
+                //_animalHead.AddForce(Vector3.up * 20, ForceMode.Impulse);
                 transform.SetParent(other.transform);
                 _dragAndShoot.OffLandingPoint();
                 _animalMovement.InitMovement();
