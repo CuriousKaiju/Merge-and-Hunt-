@@ -12,6 +12,8 @@ TagManager:
   - Predator
   - GreenZone
   - PreyGhost
+  - Water
+  - PredatorMain
   layers:
   - Default
   - TransparentFX

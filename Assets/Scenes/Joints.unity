@@ -550,6 +550,10 @@ PrefabInstance:
       propertyPath: m_UpdateWhenOffscreen
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4813647346967143963, guid: 4976e66f58a0a0c489204f743c2d1bff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4868449162632735385, guid: 4976e66f58a0a0c489204f743c2d1bff, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -564,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4868449162632735385, guid: 4976e66f58a0a0c489204f743c2d1bff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.4
+      value: 4.651
       objectReference: {fileID: 0}
     - target: {fileID: 4868449162632735385, guid: 4976e66f58a0a0c489204f743c2d1bff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1277,6 +1281,10 @@ PrefabInstance:
     - target: {fileID: 6071006465439400676, guid: c3fa35dbce42fdd43bd469f2d7ebd2c2, type: 3}
       propertyPath: m_UpdateWhenOffscreen
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6121149289934280148, guid: c3fa35dbce42fdd43bd469f2d7ebd2c2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6121149289934280148, guid: c3fa35dbce42fdd43bd469f2d7ebd2c2, type: 3}
       propertyPath: m_Controller
