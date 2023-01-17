@@ -19,6 +19,7 @@ public class Predator : MonoBehaviour
     [SerializeField] private GameObject _trueHead;
 
     [SerializeField] private int _damage;
+    [SerializeField] private GameObject _waterParticles;
 
     private GameObject _lastCreature;
     private Transform _closestHuntPoint;
