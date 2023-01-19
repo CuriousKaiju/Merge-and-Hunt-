@@ -71,25 +71,25 @@ public class UIHalper : MonoBehaviour
     }
     public void LoadMeinMenu()
     {
-        DOTween.KillAll();
         Debug.Log("finish: " + (_levelID - 1).ToString());
         TinySauce.OnGameFinished(false, _newMeat, (_levelID - 1).ToString());
         SceneManager.LoadScene("MainScene");
+        DOTween.KillAll();
     }
 
     private void FinishLevel()
     {
-        DOTween.KillAll();
-
         if (_desiredPreyCount == _playersPreyCount)
         {
-            TinySauce.OnGameFinished(true, _newMeat, (_levelID - 1).ToString());
-            Debug.Log("finish: " + (_levelID - 1).ToString() + " true");
+            TinySauce.OnGameFinished(true, _newMeat, (_levelID - 2).ToString());
+            Debug.Log("finish: " + (_levelID - 2).ToString() + " true");
         }
         else
         {
-            TinySauce.OnGameFinished(false, _newMeat, _levelID.ToString());
-            Debug.Log("finish: " + (_levelID).ToString() + " false");
+            TinySauce.OnGameFinished(false, _newMeat, (_levelID - 1).ToString());
+            Debug.Log("finish: " + (_levelID - 1).ToString() + " false");
         }
+
+        DOTween.KillAll();
     }
 }

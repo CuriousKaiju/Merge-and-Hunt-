@@ -148,7 +148,6 @@ public class Predator : MonoBehaviour
             {
                 if(!_initMoveToPreyRadius)
                 {
-                    Debug.Log("Shift");
                     _initMoveToPreyRadius = true;
                     _collisionWas = false;
                     _closestHuntPoint = other.gameObject.GetComponent<Prey>()._huntPoint;
