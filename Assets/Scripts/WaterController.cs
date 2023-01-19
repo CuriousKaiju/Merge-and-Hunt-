@@ -10,7 +10,7 @@ public class WaterController : MonoBehaviour
         if(other.gameObject.CompareTag("PredatorMain"))
         {
             var newWaterParticles = Instantiate(_waterParticles);
-            newWaterParticles.transform.position = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
+            newWaterParticles.transform.position = new Vector3(other.transform.position.x, transform.position.y + 0.1f, other.transform.position.z);
         }
     }
 }

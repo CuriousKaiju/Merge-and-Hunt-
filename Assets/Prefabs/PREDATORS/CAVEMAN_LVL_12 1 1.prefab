@@ -542,6 +542,7 @@ MonoBehaviour:
   _creature: {fileID: 1536731398616259756}
   _trueHead: {fileID: 3109779718959459932}
   _damage: 500
+  _waterParticles: {fileID: 0}
   _readyForAttack: 0
 --- !u!1001 &224930200624970968
 PrefabInstance:
@@ -709,9 +710,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7518106337594476329}
     m_Modifications:
+    - target: {fileID: 262059709926952796, guid: d83f50c28ba94a54d9a706a62619ade3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1234981202884001013, guid: d83f50c28ba94a54d9a706a62619ade3, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605081695624427270, guid: d83f50c28ba94a54d9a706a62619ade3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3525556559819638009, guid: d83f50c28ba94a54d9a706a62619ade3, type: 3}
       propertyPath: m_Name
@@ -759,6 +768,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3645520580578915117, guid: d83f50c28ba94a54d9a706a62619ade3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5194761893183404122, guid: d83f50c28ba94a54d9a706a62619ade3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111679219516247943, guid: d83f50c28ba94a54d9a706a62619ade3, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7061830268484239033, guid: d83f50c28ba94a54d9a706a62619ade3, type: 3}
