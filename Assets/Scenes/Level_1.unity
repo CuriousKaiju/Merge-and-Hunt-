@@ -3832,6 +3832,322 @@ PrefabInstance:
       propertyPath: _pathesForPredators.Array.data[11].pathCreator
       value: 
       objectReference: {fileID: 349501928}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.size
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[0]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[1]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[2]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[3]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[4]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[5]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[6]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[7]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[8]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[9]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[10]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[11]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[12]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[13]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[14]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[15]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[16]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[17]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[18]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[19]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[20]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[21]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[22]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[23]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[24]._platformCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[0]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[1]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[2]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[3]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[4]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[5]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[6]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[7]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[8]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[9]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[10]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[11]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[12]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[13]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[14]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[15]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[16]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[17]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[18]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[19]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[20]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[22]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[24]._isPlatformFree
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[0]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[1]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[2]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[3]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[4]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[5]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[6]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[7]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[8]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[9]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[10]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[11]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[12]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[13]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[14]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[20]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[21]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[22]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[23]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[24]._isPlatformBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[15]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[16]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[17]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[18]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[19]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[20]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[21]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[22]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[23]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
+      propertyPath: _savesPlatformArrayForStart._savesPlatforms.Array.data[24]._isPlatformForHunt
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6269520835980155, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: m_Name
       value: PREDATORS PATH HANDLER

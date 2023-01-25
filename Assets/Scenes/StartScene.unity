@@ -220,6 +220,133 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f79af343d16edf42afcde211ededd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savesPlatformArrayForStart:
+    _savesPlatforms:
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 0
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 0
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 0
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 0
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 0
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 0
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 1
+      _isPlatformFree: 0
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 1
+      _isPlatformFree: 0
+      _levelOfCreature: 0
+      _platformCost: 500
+    - _isPlatformForHunt: 1
+      _isPlatformBought: 1
+      _isPlatformFree: 1
+      _levelOfCreature: 0
+      _platformCost: 500
 --- !u!1001 &1262022736
 PrefabInstance:
   m_ObjectHideFlags: 0

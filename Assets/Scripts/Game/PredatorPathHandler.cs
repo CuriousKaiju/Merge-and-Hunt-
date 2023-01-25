@@ -37,6 +37,8 @@ public class PredatorPathHandler : MonoBehaviour
 
     [SerializeField] private Camera _camera;
 
+    [SerializeField] private SavesPlatformArray _savesPlatformArrayForStart;
+
     private AnimalMovement _firstPredator;
     private string _dataPath;
     private bool _firstEnemyWasSpawned;
@@ -147,11 +149,11 @@ public class PredatorPathHandler : MonoBehaviour
                     _firstEnemyWasSpawned = true;
 
                 }
-                else if(!savesPlatforms._isPlatformFree && _firstEnemyWasSpawned && savesPlatforms._isPlatformForHunt)
+                else if (!savesPlatforms._isPlatformFree && _firstEnemyWasSpawned && savesPlatforms._isPlatformForHunt)
                 {
 
                     var newPredator = Instantiate(_predators[savesPlatforms._levelOfCreature]).GetComponent<AnimalMovement>();
-                    if(_isItBeginersLevel)
+                    if (_isItBeginersLevel)
                     {
                         newPredator.SetAimForBeginers();
                     }
@@ -162,6 +164,7 @@ public class PredatorPathHandler : MonoBehaviour
                 }
             }
         }
+        
     }
     private void SpawnPrey()
     {
