@@ -66,7 +66,14 @@ public class DragAndShoot : MonoBehaviour
                 if (_dividedResult.magnitude > 90)
                 {
                     _landingPoint.SetActive(true);
-                    _rangePoint.localPosition = new Vector3(_dividedResult.x, 0, _dividedResult.y);
+                    if (_dividedResult.y > 0)
+                    {
+                        _rangePoint.localPosition = new Vector3(_dividedResult.x, 0, Mathf.Abs(_dividedResult.y));
+                    }
+                    else
+                    {
+                        _rangePoint.localPosition = new Vector3(-_dividedResult.x, 0, Mathf.Abs(_dividedResult.y));
+                    }
                     var vectorOfForce = transform.position - new Vector3(_rangePoint.position.x, 0, _rangePoint.position.z);
                     //vectorOfForce = new Vector3(-vectorOfForce.x, Mathf.Abs(vectorOfForce.x), -vectorOfForce.z);
                     vectorOfForce = new Vector3(-vectorOfForce.x, Mathf.Abs(force.y), -vectorOfForce.z);

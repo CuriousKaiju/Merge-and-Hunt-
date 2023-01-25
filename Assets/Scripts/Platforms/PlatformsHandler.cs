@@ -7,6 +7,7 @@ public class PlatformsHandler : MonoBehaviour
     [SerializeField] private Platform[] _platforms;
     [SerializeField] private List<Platform> _freePlatforms = new List<Platform>();
     [SerializeField] private List<Platform> _huntOpenedStashPlatforms = new List<Platform>();
+    private List<Platform> _platformsForHunt = new List<Platform>();
     [SerializeField] private SavesPlatformArray _arrayForSaves;
     [SerializeField] private GameObject _animalPlatform;
     [SerializeField] private SceneController _sceneController;
@@ -120,7 +121,18 @@ public class PlatformsHandler : MonoBehaviour
     {
         if (_freePlatforms.Count > 0)
         {
+            _platformsForHunt = new List<Platform>();
+
+            foreach (Platform platform in _platforms)
+            {
+                if (platform._isPlatformFree && platform._isItBoughtPlatform && platform._isItHuntGroupPlatform)
+                {
+                    return platform;
+                }
+            }
+
             return _freePlatforms[Random.Range(0, _freePlatforms.Count - 1)];
+
         }
         else
         {
