@@ -31,6 +31,7 @@ public class Prey : MonoBehaviour
         _pointForConnection = _ragDoll[0];
         _healthBar.SetStartHp(_totalHealth);
         RagDollStatus(true);
+        AddScripts();
         GameEvents.OnStartHunt += StartMovementHunt;
         GameEvents.OnStartAllGhost += InitMovementOfGhost;
     }
@@ -50,10 +51,13 @@ public class Prey : MonoBehaviour
 
             transform.DOPunchScale(_punchSkale, _impactTime);
             _animalTransform.DOPunchScale(_punchSkale, _impactTime);
-            _meshRenderer.material.DOColor(_impactColor, _impactTime / 2).OnComplete(() =>
+            if(_meshRenderer)
             {
-                _meshRenderer.material.DOColor(Color.white, _impactTime / 2);
-            });
+                _meshRenderer.material.DOColor(_impactColor, _impactTime / 2).OnComplete(() =>
+                {
+                    _meshRenderer.material.DOColor(Color.white, _impactTime / 2);
+                });
+            }
 
             _totalHealth -= damage;
 
@@ -107,7 +111,7 @@ public class Prey : MonoBehaviour
     {
         StartCoroutine(SetVarningStatus(levelSpeed));
     }
-        
+
     private void RagDollStatus(bool status)
     {
         _animator.enabled = status;
@@ -117,6 +121,14 @@ public class Prey : MonoBehaviour
             //rb.GetComponent<Collider>().enabled = status;
             rb.isKinematic = status;
             rb.GetComponent<Collider>().enabled = status;
+        }
+    }
+    private void AddScripts()
+    {
+        foreach (Rigidbody rb in _ragDoll)
+        {
+            var preyPart = rb.transform.gameObject.AddComponent<PreyPart>();
+            preyPart._rootTransform = transform;
         }
     }
 }

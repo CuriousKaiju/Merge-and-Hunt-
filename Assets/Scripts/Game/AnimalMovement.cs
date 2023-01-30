@@ -24,6 +24,8 @@ public class AnimalMovement : MonoBehaviour
     private float _distanceTreveled;
     private bool _cameraPosition;
 
+    [SerializeField] private bool _isItSpecialObject;
+
     private void Awake()
     {
         GameEvents.OnUpdateGhostStatus += UpdateGhost;
@@ -38,7 +40,10 @@ public class AnimalMovement : MonoBehaviour
     }
     void Update()
     {
-        Move();
+        if(!_isItSpecialObject)
+        {
+            Move();
+        }
     }
     private void Move()
     {

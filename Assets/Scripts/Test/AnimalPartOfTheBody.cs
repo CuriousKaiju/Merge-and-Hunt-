@@ -27,7 +27,8 @@ public class AnimalPartOfTheBody : MonoBehaviour
             if (other.gameObject.CompareTag(_enemyTag))
             {
                 DOTween.KillAll();
-                _animal.ChangeTriggersToColliders(other.transform.root.GetComponent<Prey>());
+                //_animal.ChangeTriggersToColliders(other.transform.root.GetComponent<Prey>());
+                _animal.ChangeTriggersToColliders(other.transform.GetComponent<PreyPart>()._rootTransform.GetComponent<Prey>());
                 var newJoint = gameObject.AddComponent<HingeJoint>();
                 newJoint.connectedBody = other.GetComponent<Rigidbody>();
                 newJoint.enableCollision = true;
