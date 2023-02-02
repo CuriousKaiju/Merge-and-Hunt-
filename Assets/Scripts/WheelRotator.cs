@@ -8,6 +8,6 @@ public class WheelRotator : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(new Vector3(_rotationSpeed, 0, 0) * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 0, _rotationSpeed) * Time.deltaTime);
     }
 }

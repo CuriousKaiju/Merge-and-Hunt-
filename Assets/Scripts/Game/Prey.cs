@@ -49,7 +49,8 @@ public class Prey : MonoBehaviour
             _bloodParticles.SetActive(true);
             _bloodParticles.GetComponent<ParticleSystem>().Play();
 
-            transform.DOPunchScale(_punchSkale, _impactTime);
+            transform.parent = null;
+            //transform.DOPunchScale(_punchSkale, _impactTime);
             _animalTransform.DOPunchScale(_punchSkale, _impactTime);
             if(_meshRenderer)
             {

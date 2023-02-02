@@ -3801,6 +3801,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -15.055
       objectReference: {fileID: 0}
+    - target: {fileID: 7380954550156054451, guid: 882dbecd0cde0dd45b9057a489bce099, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b04d5d7774d65704299642e39626529d, type: 2}
     - target: {fileID: 7380954550378541896, guid: 882dbecd0cde0dd45b9057a489bce099, type: 3}
       propertyPath: m_Name
       value: DESERT LOCATION
