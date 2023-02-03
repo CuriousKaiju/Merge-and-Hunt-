@@ -26,7 +26,6 @@ public class Predator : MonoBehaviour
     private bool _canMagnitude;
     public bool _readyForAttack;
     private bool _collisionWas;
-    private bool _initMoveToPreyRadius;
 
 
     private void Awake()
@@ -104,20 +103,42 @@ public class Predator : MonoBehaviour
             rb.isKinematic = false;
         }
     }
-    private void ShiftToPrey()
+    private void Magnitude()
     {
+        _canMagnitude = false;
         _predatorRb.isKinematic = true;
-        //transform.DOLookAt(_closestHuntPoint.position, 0.45f);
-        transform.DOMove(_closestHuntPoint.position, 0.45f).OnComplete(() =>
+        transform.DOLookAt(_closestHuntPoint.position, 0.4f);
+        transform.DOMove(_closestHuntPoint.position, 0.4f).OnComplete(() =>
         {
+            /*
             if (!_collisionWas)
             {
-                var prey = _lastCreature.GetComponent<Prey>();
-                ChangeTriggersToColliders(prey);
-                var newJoint = _animalHead.gameObject.AddComponent<HingeJoint>();
-                newJoint.connectedBody = prey._pointForConnection.GetComponent<Rigidbody>();
-                newJoint.enableCollision = true;
+                _canMagnitude = false;
+                transform.DOKill();
+                bool isItKill;
+                int rewardForKill;
+                GameEvents.CallIncreaseCombo(true);
+                _lastCreature.GetComponent<Prey>().GetDamage(_damage, _lastCreature.GetComponent<Prey>()._pointForConnection.transform, out isItKill, out rewardForKill);
+                GameEvents.CallOnFindNewPredator(_lastCreature.transform);
+                gameObject.GetComponent<Collider>().enabled = false;
+                SetRagDoll();
+                //_animalHead.isKinematic = true;
+                _predatorRb.isKinematic = true;
+                //transform.SetParent(other.transform);
+                _dragAndShoot.OffLandingPoint();
+                _animalMovement.InitMovement();
+                GameEvents.CallWindParticles(false);
+                _creature.SetParent(null);
+                _trueHead.AddComponent<FixedJoint>().connectedBody = _lastCreature.GetComponent<Prey>()._pointForConnection;
+
+                if (isItKill)
+                {
+                    _animalHead.AddForce(Vector3.up * 300, ForceMode.Impulse);
+                }
+
+                Destroy(gameObject);
             }
+            */
         });
 
     }
@@ -125,13 +146,44 @@ public class Predator : MonoBehaviour
     {
         if (_readyForAttack)
         {
+            /*
+            if (other.gameObject.CompareTag("Prey"))
+            {
+                transform.DOKill();
+                _collisionWas = true;
+                _canMagnitude = false;
+                bool isItKill;
+                int rewardForKill;
+                GameEvents.CallIncreaseCombo(true);
+                other.transform.root.GetComponent<Prey>().GetDamage(_damage, other.transform, out isItKill, out rewardForKill);
+                GameEvents.CallOnFindNewPredator(other.transform.root);
+                gameObject.GetComponent<Collider>().enabled = false;
+                SetRagDoll();
+                //_animalHead.isKinematic = true;
+                _predatorRb.isKinematic = true;
+                //transform.SetParent(other.transform);
+                _dragAndShoot.OffLandingPoint();
+                _animalMovement.InitMovement();
+                GameEvents.CallWindParticles(false);
+                _creature.SetParent(null);
+                _trueHead.AddComponent<HingeJoint>().connectedBody = other.gameObject.GetComponent<Rigidbody>();
+
+                if (isItKill)
+                {
+                    _animalHead.AddForce(Vector3.up * 300, ForceMode.Impulse);
+                }
+
+                Destroy(gameObject);
+
+            }
+            */
 
             if (other.gameObject.CompareTag("Ground"))
             {
-                _collisionWas = true;
+                _canMagnitude = false;
                 StopCollisions();
+                _canMagnitude = false;
                 transform.DOKill();
-                GameEvents.CallOnUpdateGhostStatus();
                 GameEvents.CallIncreaseCombo(false);
                 GameEvents.CallOnFindNewPredator(other.transform.root);
                 gameObject.GetComponent<Collider>().enabled = false;
@@ -143,9 +195,12 @@ public class Predator : MonoBehaviour
                 GameEvents.CallWindParticles(false);
                 _creature.SetParent(null);
                 Destroy(gameObject);
+
             }
+            /*
             else if (other.gameObject.CompareTag("PreyRadius"))
             {
+<<<<<<< HEAD
                 if(!_initMoveToPreyRadius)
                 {
                     _initMoveToPreyRadius = true;
@@ -155,9 +210,36 @@ public class Predator : MonoBehaviour
                     ShiftToPrey();
                 }
             } 
+=======
+                Debug.Log("Shift");
+                _predatorRb.isKinematic = true;
+                _lastCreature = other.gameObject;
+                _canMagnitude = true;
+                _closestHuntPoint = other.gameObject.GetComponent<Prey>()._huntPoint;
+            }
+            */
+   
+>>>>>>> parent of fcc2af8f (Finish)
         }
     }
 
+    public void HitGround(Collider other)
+    {
+        StopCollisions();
+        _canMagnitude = false;
+        transform.DOKill();
+        GameEvents.CallIncreaseCombo(false);
+        GameEvents.CallOnFindNewPredator(other.transform.root);
+        gameObject.GetComponent<Collider>().enabled = false;
+        SetRagDoll();
+        _animalHead.AddForce(Vector3.up * 80, ForceMode.Impulse);
+        transform.SetParent(other.transform);
+        _dragAndShoot.OffLandingPoint();
+        _animalMovement.InitMovement();
+        GameEvents.CallWindParticles(false);
+        _creature.SetParent(null);
+        Destroy(gameObject);
+    }
 
     private void StopCollisions()
     {
@@ -199,6 +281,7 @@ public class Predator : MonoBehaviour
         }
 
         _collisionWas = true;
+        _canMagnitude = false;
         bool isItKill;
         int rewardForKill;
         GameEvents.CallIncreaseCombo(true);

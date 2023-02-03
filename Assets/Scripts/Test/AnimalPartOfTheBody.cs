@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class AnimalPartOfTheBody : MonoBehaviour
 {
@@ -26,12 +25,17 @@ public class AnimalPartOfTheBody : MonoBehaviour
         {
             if (other.gameObject.CompareTag(_enemyTag))
             {
+<<<<<<< HEAD
                 DOTween.KillAll();
                 //_animal.ChangeTriggersToColliders(other.transform.root.GetComponent<Prey>());
                 _animal.ChangeTriggersToColliders(other.transform.GetComponent<PreyPart>()._rootTransform.GetComponent<Prey>());
+=======
+                _animal.ChangeTriggersToColliders(other.transform.root.GetComponent<Prey>());
+>>>>>>> parent of fcc2af8f (Finish)
                 var newJoint = gameObject.AddComponent<HingeJoint>();
                 newJoint.connectedBody = other.GetComponent<Rigidbody>();
                 newJoint.enableCollision = true;
+                Debug.Log("Collision");
             }
         }
     }

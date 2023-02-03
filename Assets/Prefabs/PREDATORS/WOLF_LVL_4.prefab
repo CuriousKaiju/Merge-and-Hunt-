@@ -372,15 +372,17 @@ MonoBehaviour:
   _speed: 0
   _levelSpeed: 0
   _isItForstCreature: 0
+<<<<<<< HEAD
   _needGhost: 0
   _ghost: {fileID: 0}
+=======
+>>>>>>> parent of fcc2af8f (Finish)
   _pathCreator: {fileID: 0}
   _predator: {fileID: 153621522}
   _lookPoint: {fileID: 1784058190346799024}
   _particleMarkert: {fileID: 644290940248701650}
   _dragAndShoot: {fileID: 1580044042}
   _collider: {fileID: 7726917057904822698}
-  _landingPoint: {fileID: 9107299842954540144}
 --- !u!114 &1580044042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,8 +456,6 @@ MonoBehaviour:
   - {fileID: 1100565542246480427}
   - {fileID: 8991056703034086636}
   - {fileID: 3022007689220740936}
-  _colliders: []
-  _animalParts: []
   _animalHead: {fileID: 5111649243617766999}
   _predatorRb: {fileID: 7895792625139183202}
   _dragAndShoot: {fileID: 1580044042}
@@ -1476,10 +1476,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LANDING POINT
       objectReference: {fileID: 0}
-    - target: {fileID: 4260476810510045058, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
-      propertyPath: _lineRenderer
-      value: 
-      objectReference: {fileID: 1298839978607104147}
     - target: {fileID: 8030519226920074262, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1536,17 +1532,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2402905176320383870, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
   m_PrefabInstance: {fileID: 4991081174756178930}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9107299842954540144 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4260476810510045058, guid: ced18cc5b9df4a4498ad1bbfc7676d73, type: 3}
-  m_PrefabInstance: {fileID: 4991081174756178930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7213416835050184844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5a740d69143ac34cb1df95858f8ef4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5980213849106018160
 PrefabInstance:
   m_ObjectHideFlags: 0

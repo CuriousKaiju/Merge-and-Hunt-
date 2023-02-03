@@ -348,7 +348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 129.59985}
+  m_AnchoredPosition: {x: 0.00012207031, y: 129.59998}
   m_SizeDelta: {x: -0.054077, y: 259.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &488768151
@@ -609,26 +609,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 869915674, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
-      propertyPath: m_TagString
-      value: Prey
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275986016455259424, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
-      propertyPath: m_TagString
-      value: Prey
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275986016483608534, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
-      propertyPath: m_TagString
-      value: Prey
-      objectReference: {fileID: 0}
     - target: {fileID: 2275986016673950515, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
       propertyPath: _camera
       value: 
       objectReference: {fileID: 524131820}
-    - target: {fileID: 2275986016765429679, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
-      propertyPath: m_TagString
-      value: Prey
-      objectReference: {fileID: 0}
     - target: {fileID: 2275986016787632523, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -681,14 +665,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 5893907378433829526, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
-      propertyPath: m_TagString
-      value: Prey
-      objectReference: {fileID: 0}
-    - target: {fileID: 8703191708587097119, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
-      propertyPath: m_TagString
-      value: Prey
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8572524517132601522, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db59a98ed6c1e9643ba5e18a1956bda0, type: 3}
@@ -727,7 +703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -125.80005}
+  m_AnchoredPosition: {x: 0.00012207031, y: -125.80005}
   m_SizeDelta: {x: -0.1, y: 251.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &609720720
@@ -1827,7 +1803,6 @@ MonoBehaviour:
   _levelID: 1
   _isItLastLevel: 0
   _isItMainUIHapler: 0
-  _levelVisual: 0
 --- !u!224 &1406150393 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6599687720280874839, guid: a01daa54d187b614caf040bd8b1573b1, type: 3}
@@ -2453,7 +2428,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.1053107
   m_Center: {x: 0, y: 0.42, z: 0.6}
 --- !u!54 &1623432681
 Rigidbody:
@@ -3437,10 +3412,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
-      propertyPath: _camera
-      value: 
-      objectReference: {fileID: 524131820}
-    - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _uiHalper
       value: 
       objectReference: {fileID: 1775413433}
@@ -3474,7 +3445,7 @@ PrefabInstance:
       objectReference: {fileID: 180057951}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _predators.Array.size
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _animalsPrey.Array.size
@@ -3527,7 +3498,7 @@ PrefabInstance:
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _predators.Array.data[11]
       value: 
-      objectReference: {fileID: 7419994916710985693, guid: de9c7176854034a4c9ee86aa113b7ae1, type: 3}
+      objectReference: {fileID: 6278039722041392507, guid: 2d90993e1f8543a4c95936b13a83a51a, type: 3}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _predators.Array.data[12]
       value: 
@@ -3539,7 +3510,7 @@ PrefabInstance:
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _animalsPrey.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1623432672}
     - target: {fileID: 6269520835980154, guid: e2aa0f47c7800284380e01016e5cab6e, type: 3}
       propertyPath: _animalsPrey.Array.data[2]
       value: 
@@ -4587,7 +4558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9037994637205873216, guid: c359788a431ebc145b645166cb322835, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.014404297
+      value: 0.014526367
       objectReference: {fileID: 0}
     - target: {fileID: 9037994637205873216, guid: c359788a431ebc145b645166cb322835, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

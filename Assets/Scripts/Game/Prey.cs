@@ -33,12 +33,10 @@ public class Prey : MonoBehaviour
         RagDollStatus(true);
         AddScripts();
         GameEvents.OnStartHunt += StartMovementHunt;
-        GameEvents.OnStartAllGhost += InitMovementOfGhost;
     }
     private void OnDestroy()
     {
         GameEvents.OnStartHunt -= StartMovementHunt;
-        GameEvents.OnStartAllGhost -= InitMovementOfGhost;
     }
     public void GetDamage(int damage, out bool isItDie, out int reward)
     {
@@ -65,20 +63,16 @@ public class Prey : MonoBehaviour
             if (_totalHealth > 0)
             {
                 _healthBar.MinusHealth(_totalHealth);
-                GameEvents.CallOnStartAllGhost();
             }
             else
             {
-                _isAnimalAlive = false;
-                GameEvents.CallOnStartAllGhost();
                 _magnitCollider.enabled = false;
                 creatureStatus = true;
                 GameEvents.CallOnPreyDied(gameObject, _reward);
                 _healthBar.gameObject.SetActive(false);
                 _animalMovement.enabled = false;
                 RagDollStatus(false);
-
-                _animalMovement.CloseGhost();
+                _isAnimalAlive = false;
             }
 
             _haptic.Play();
@@ -91,21 +85,12 @@ public class Prey : MonoBehaviour
     private IEnumerator SetVarningStatus(float levelSpeed)
     {
         _animalMovement.StartGhost(levelSpeed);
-
         _warningParticles.SetActive(true);
         _animalMovement._speed = levelSpeed;
         _animator.speed = levelSpeed * 10;
         _animator.SetTrigger("Run");
         yield return new WaitForSeconds(1f);
         _warningParticles.SetActive(false);
-    }
-
-    private void InitMovementOfGhost()
-    {
-        if(_isAnimalAlive)
-        {
-            _animalMovement.StartGhost();
-        }
     }
 
     private void StartMovementHunt(float levelSpeed)
@@ -121,7 +106,6 @@ public class Prey : MonoBehaviour
         {
             //rb.GetComponent<Collider>().enabled = status;
             rb.isKinematic = status;
-            rb.GetComponent<Collider>().enabled = status;
         }
     }
     private void AddScripts()
